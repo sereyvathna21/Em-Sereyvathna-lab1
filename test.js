@@ -1,6 +1,6 @@
-const request = require("supertest");
-const app = require("./app");
-const { expect } = require("chai");
+import request from 'supertest';
+import app from './app.js';
+import { expect } from 'chai';
 describe("GET /", () => {
   it("should return Hello, GitHub Actions!", async () => {
     const res = await request(app).get("/");
