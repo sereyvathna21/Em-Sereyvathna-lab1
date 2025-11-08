@@ -2,10 +2,11 @@
   "name": "em-sereyvathna-lab1",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "test": "mocha --exit",
-    "lint": "eslint . --ext .js"
+    "lint": "\"./node_modules/.bin/eslint\" . --ext .js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,13 @@
   "description": "",
   "dependencies": {
     "chai": "^4.3.7",
-    "eslint": "^9.39.1",
     "express": "^5.1.0",
     "mocha": "^11.7.5",
     "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
   }
 }
