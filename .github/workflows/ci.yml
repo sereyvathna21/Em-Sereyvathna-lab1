@@ -1,4 +1,4 @@
-name: Node.js CI (Yarn)
+name: Node.js CI (npm)
 on:
   push:
     branches: [main]
@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm ci
       - name: Lint code
         run: npm run lint
       - name: Run tests
