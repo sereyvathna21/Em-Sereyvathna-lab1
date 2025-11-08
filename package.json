@@ -1,0 +1,29 @@
+{
+  "name": "em-sereyvathna-lab1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --exit",
+    "lint": "eslint . --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sereyvathna21/Em-Sereyvathna-lab1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sereyvathna21/Em-Sereyvathna-lab1/issues"
+  },
+  "homepage": "https://github.com/sereyvathna21/Em-Sereyvathna-lab1#readme",
+  "description": "",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^9.39.1",
+    "express": "^5.1.0",
+    "mocha": "^11.7.5",
+    "supertest": "^7.1.4"
+  }
+}
